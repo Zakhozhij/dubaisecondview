@@ -1,0 +1,159 @@
+.first_class_flights {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	gap: 30px;
+	max-width: 1124px;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.first_class_flights_title {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	text-align: center;
+	color: #242424;
+}
+.first_class_flights_block {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+    justify-content: center;
+	flex-wrap: wrap;
+	padding: 0px;
+	gap: 24px;
+	width:100%;
+}
+.first_class_flights_block_item {
+	position: relative;
+	background: #ffffff;
+	min-width: 263px;
+	min-height: 319px;
+	box-shadow: 2px 4px 16px rgba(0, 109, 210, 0.06);
+	border-radius: 24px;
+	width: 263px;
+	height: 319px;
+}
+.first_class_flights_block_item_image img {
+	position: absolute;
+	width: 263px;
+	height: 197px;
+	left: 0px;
+	top: 0px;
+	border-radius: 24px 24px 0px 0px;
+}
+.first_class_flights_block_item_description {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 8px;
+
+	position: absolute;
+	width: 235px;
+	height: 69px;
+	left: 14.56px;
+	top: 208.47px;
+}
+.first_class_flights_block_item_description_country {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	color: #242424;
+}
+.first_class_flights_block_item_description_price {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #000000;
+}
+.first_class_flights_block_item_description_total {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 15px;
+	color: #000000;
+	opacity: 0.3;
+}
+.first_class_flights_block_item_label img {
+	position: absolute;
+	width: 86.6px;
+	height: 24.15px;
+	left: 163.96px;
+	top: 281.47px;
+}
+.first_class_flights_block_item_discount {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 12px;
+	gap: 4px;
+	position: absolute;
+	width: 150px;
+	height: 59px;
+	left: 98.56px;
+	top: 12.51px;
+	background: #2e6bcb;
+	border-radius: 17px;
+	z-index: 1;
+}
+.first_class_flights_block_item_discount_discount {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 15px;
+	color: #f3f3f3;
+	opacity: 0.6;
+}
+.first_class_flights_block_item_discount_savings {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	color: #f3f3f3;
+}
+.first_class_flights_block_item_description_price span {
+	background: linear-gradient(
+		180deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(33, 66, 147, 1) 6%,
+		rgba(0, 212, 255, 1) 100%,
+		rgba(0, 212, 255, 1) 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 700;
+}
+.first_class_flights_leave_request{
+    display: block;
+    margin: 0 auto;
+}
+@media (max-width: 1439px) {
+    .first_class_flights_block {
+        width: 70%;
+    }
+}
+@media (max-width: 1200px) {
+	.first_class_flights_block {
+        width: 80%;
+    }
+}
+@media (max-width: 576px) {
+}
+
+
+
+
+@media (min-width: 200px) and (max-width: 1440px) {
+	.first_class_flights {
+		width: calc(100% + (89.56 - 100) * ((100vw - 400px) / (1440px - 400)));
+	}
+	
+	.first_class_flights_title {
+		font-size: calc(16px + (36 - 16) * ((100vw - 200px) / (1440 - 200)));
+	}
+}

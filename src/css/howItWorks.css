@@ -1,0 +1,221 @@
+.how_it_works{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+    max-width: 1110.28px;
+    width:88.4%;
+    margin: 0 auto;
+}
+.how_it_works_title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #242424;
+}
+.how_it_works_way{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 28px;
+  
+}
+.how_it_works_way_item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px 24px;
+    gap: 22px;
+    max-width: 248px;
+    max-height: 209px;
+
+    background: rgba(255, 255, 255, 0.76);
+    backdrop-filter: blur(5px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 24px;
+}
+
+.how_it_works_way_item_descr {
+	width: 100%;
+	height: 48px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	color: #242424;
+}
+.how_it_works_way_item_icon{
+    width: 100%;
+    height: 65px;
+}
+.how_it_works_way_item_icon_block {
+    position: relative;
+	width: 65px;
+	height: 65px;
+	background: #f4f8fd;
+	border-radius: 10px;
+    margin: 0 auto;
+    
+}
+.how_it_works_way_item_icon_block img {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 16.5px;
+    top: 16px;
+}
+.how_it_works_way_item_step{
+    width: 100%;
+    height: 16px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+
+    color: #000000;
+
+    opacity: 0.3;
+}
+.how_it_works_leave_request{
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+   
+}
+
+.blur_line{
+    position: absolute;
+    width: 78%;
+    height: 6.5px;
+    right: 0;
+	left: 0;
+	margin: auto;
+    top: 85.25px;
+    z-index: 0;
+    background: linear-gradient(180deg, #006DD2 -11.29%, #59C2FD 105.4%);
+}
+
+
+.how_it_works_way_item:after {
+    content: '';
+    position: absolute;
+    border: 12px solid transparent; 
+    border-left: 12px solid #3aa4ee;
+    left: 258px;
+    top: 88px;
+    transform: translateY(-50%);
+}
+.how_it_works_way_item:nth-child(5):after {
+    content: '';
+    border: 0; 
+    border-left: 0;
+    left: 0;
+    top: 0;
+    
+}
+
+
+@media (max-width: 992px) {
+    .how_it_works_way_item {
+         padding: 0;
+    }
+    .how_it_works_way_item:after {
+        top: 87px;
+    }
+    .blur_line{
+        height: 4.5px;
+    }
+}
+@media (max-width: 768px) {
+    
+    .how_it_works_way{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 28px;
+    }
+    .how_it_works_way_item {
+        width: 300px;
+        height: 225px;
+        align-items: center;
+    }
+    .how_it_works_way_item_step {
+        width: 225px;
+    }
+    .how_it_works_way_item_icon{
+        width: 225px;
+    }
+    .how_it_works_way_item_descr {
+        width: 225px;
+        font-size: 16px;
+        line-height: 25px;
+    } 
+    .blur_line{
+        width: 6.5px;
+        height: 78%;
+        top: 85.25px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        background: linear-gradient(180deg, #006DD2 -11.29%, #59C2FD 105.4%);
+    }
+    .how_it_works_way_item:after {
+        left: 115px;
+        top: 229px;
+        border: 9px solid transparent; 
+        border-top: 9px solid #3aa4ee;
+    }
+
+}
+@media (max-width: 375px) {
+	.how_it_works_img{
+        top:10%;
+        position: absolute;
+        height: 80%;
+        width: 100%;
+        z-index: 0;
+		background:url(../img/howItWorks/clouds.jpg);
+    }
+    .how_it_works_img_1{
+        height: 50%;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 62.5%);
+transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+    .how_it_works_img_2{
+        height: 50%;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 62.5%);
+    }
+}
+
+@media (min-width: 200px) and (max-width: 1440px) {
+	.how_it_works {
+		width: calc(100% + (88.4 - 100) * ((100vw - 400px) / (1440 - 400)));
+	}
+
+	.how_it_works_title {
+		font-size: calc(16px + (36 - 16) * ((100vw - 200px) / (1440 - 200)));
+	}
+  
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+	
+    .how_it_works_way_item {
+		width: calc(140px + (248 - 140) * ((100vw - 769px) / (1440 - 769)));
+        height:calc(216px + (209 - 216) * ((100vw - 769px) / (1440 - 769)));
+	}
+    .how_it_works_way_item:after {
+        left: calc(148px + (258 - 148) * ((100vw - 769px) / (1440 - 769)));
+    }
+}
+
