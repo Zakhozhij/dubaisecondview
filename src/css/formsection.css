@@ -38,11 +38,7 @@
 	color: #006DD2;
 }
 
-@media all and (max-width: 991px) {
-    .section_title {
-        margin-bottom: 15px;
-    }
-}
+
 
 
 

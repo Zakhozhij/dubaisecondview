@@ -130,5 +130,5 @@ $(".inputDate").on("change",function(){
 $(window).resize(function() {
     screenWidth = window.screen.width;
     $('.slide').removeClass('locked')
-    currentSlide = nextSlide = prevSlide = null;
+    //currentSlide = nextSlide = prevSlide = null;
 });

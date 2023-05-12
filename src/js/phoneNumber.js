@@ -1,6 +1,6 @@
 let input = document.querySelectorAll('input[name=phone]')
 
-let phoneMainForm,sphoneFormHome, phoneModalForm, phoneModalFormActive, phoneResultSearch1, phoneResultSearch2, phoneResultSearch3;
+let phoneMainForm, phoneFormHome, phoneModalForm, phoneModalFormActive, phoneResultSearch1, phoneResultSearch2, phoneResultSearch3;
 //Форма в шапке
 $("#phoneMainForm").length > 0 ?  phoneMainForm = initializationintlTelInput($("#phoneMainForm")[0]) : ''
 // форма на главной странице

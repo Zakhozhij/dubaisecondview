@@ -324,8 +324,8 @@ $('body').on('click', '.btn_delete', function(){
 document.addEventListener('DOMContentLoaded', function() {
     let modalButtons = document.querySelectorAll('.js-open-modal'),
         overlay = document.querySelector('.js-overlay-modal'),
-        closeButtons = document.querySelectorAll('.js-modal-close');
-        closeButtonsInModal = document.querySelectorAll('.js-modal-close-modal');
+        closeButtons = document.querySelectorAll('.js-modal-close'),
+        closeButtonsInModal = document.querySelectorAll('.js-modal-close-modal'),
         closeTwoModal = document.querySelectorAll('.close-modal-two');
 
     modalButtons.forEach(function (item) {

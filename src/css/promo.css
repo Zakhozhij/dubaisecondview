@@ -539,6 +539,13 @@
 	.discount_icon {
 		display: none;
 	}
+	.promo {
+		background: linear-gradient(0deg, rgba(0, 23, 105, 0.36), rgba(0, 23, 105, 0.36)),
+			url(../img/promo/promo2.jpg) no-repeat;
+		background-size: cover;
+		background-position: center;
+		/* transform: matrix(-1, 0, 0, 1, 0, 0); */
+	}
 }
 @media (max-width: 376px) {
 	.flyer_club_content {
@@ -549,6 +556,7 @@
 		gap: 3.43px;
 		font-size: 11px;
 	}
+	
 }
 
 @media (max-width: 270px) {

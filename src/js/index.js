@@ -1,5 +1,8 @@
 "use strict";
 window.addEventListener("DOMContentLoaded", () => {
+	document.querySelector('#elipse').addEventListener('click',()=>{
+		location.href="https://wa.me/message/PH4VH5HYRZXAP1";
+	})
 	getOffset();
 });
 
