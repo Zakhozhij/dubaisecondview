@@ -1,6 +1,6 @@
 .section-partners{
     margin: 0 auto;
-    margin-top: 120px;
+    margin-top: 60px;
     max-width: 1140px;
     width: 95%;
     
@@ -19,4 +19,10 @@
 .swiper-slide-partners{
     display: flex !important;
     margin:0 auto;
+}
+@media (max-width: 991px){
+
+    .section-partners {
+        margin-top: 40px;
+    }
 }

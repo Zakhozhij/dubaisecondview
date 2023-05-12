@@ -1,6 +1,8 @@
 let input = document.querySelectorAll('input[name=phone]')
 
-let phoneFormHome, phoneModalForm, phoneModalFormActive, phoneResultSearch1, phoneResultSearch2, phoneResultSearch3;
+let phoneMainForm,sphoneFormHome, phoneModalForm, phoneModalFormActive, phoneResultSearch1, phoneResultSearch2, phoneResultSearch3;
+//Форма в шапке
+$("#phoneMainForm").length > 0 ?  phoneMainForm = initializationintlTelInput($("#phoneMainForm")[0]) : ''
 // форма на главной странице
 $("#phoneFormHome").length > 0 ?  phoneFormHome = initializationintlTelInput($("#phoneFormHome")[0]) : ''
 //телефон в модалке
@@ -36,6 +38,10 @@ input.forEach(function (item) {
     item.addEventListener('blur', function() {
         reset(item);
         if (item.value.trim()) {
+            if($(item).attr('id') == 'phoneMainForm'){
+                !phoneMainForm.isValidNumber() ? addErrorClassPhoneValidate(item) : '';
+                countryName = phoneMainForm.getSelectedCountryData().iso2;
+            }
             if($(item).attr('id') == 'phoneFormHome'){
                 !phoneFormHome.isValidNumber() ? addErrorClassPhoneValidate(item) : '';
                 countryName = phoneFormHome.getSelectedCountryData().iso2;

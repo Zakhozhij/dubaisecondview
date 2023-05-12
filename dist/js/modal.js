@@ -68,6 +68,13 @@ $('form.form-valid').each(function () {
                     requestCrmUserData(json)
                 }
 
+                if (e.id === 'sendMesMain') {
+                    formMain();
+                    let json = $(e).serializeArray();
+                    requestCrmPersonData(json, e.id)
+                    requestCrmUserData(json)
+                }
+
                 if (e.id === 'sendMesModal') {
                     formModal()
                     let json = $(e).serializeArray();

@@ -76,6 +76,7 @@
 	font-weight: 400;
 	font-size: 24px;
 	color: #242424;
+	text-align: center;
 	
 }
 .slider_points {
@@ -153,13 +154,16 @@
 	}
 
 }
+@media (max-width: 375px) {
+	.swiper-button{
+		display: none;
+	}
+}
 @media (max-width: 350px) {
 	.slider_points_item {
 		width: 40px;
 	}
-	.swiper-button{
-		display: none;
-	}
+	
 }
 @media (min-width: 200px) and (max-width: 1440px) {
 	.slider {

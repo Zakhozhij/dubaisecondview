@@ -15,6 +15,20 @@ async function formSubmit() {
         alert("Код ошибки: " + response.status);
     }
 }
+async function formMain() {
+    let data = new FormData(document.forms["form-main"]);
+    let response = await fetch("send_mail.php", {
+        method: "POST",
+        body: data,
+    });
+
+    if (response.ok) {
+        dataLayer.push({'event': 'form_sent'});
+        formReset();
+    } else {
+        alert("Код ошибки: " + response.status);
+    }
+}
 
 // форма в модальном окне
 async function formModal() {
