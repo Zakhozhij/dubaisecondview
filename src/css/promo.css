@@ -7,8 +7,6 @@
 		url(../img/promo/promo.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
-	border-radius: 30px;
-	/* transform: matrix(-1, 0, 0, 1, 0, 0); */
 }
 .menu_block_container {
 	padding: 0;
