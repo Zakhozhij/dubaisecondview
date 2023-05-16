@@ -144,17 +144,14 @@
 		width: 30px;
 	}
 	.slider_info{
-		display: flex;
-		flex-direction: column-reverse;
-		justify-content: center;
-		align-items:center;
+		margin-top:10px;
 	}
 	.swiper-button {
 		top: 97%;
 	}
 
 }
-@media (max-width: 375px) {
+@media (max-width: 400px) {
 	.swiper-button{
 		display: none;
 	}

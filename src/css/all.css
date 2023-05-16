@@ -401,13 +401,12 @@ textarea {
 	width: 100%;
 	background: #ffffff;
 	position: relative;
-	padding: 27px;
-	padding-top:19px;
+	padding:0;
 }
 .city_img {
 	position: absolute;
 	height: 851.88px;
-	top: 497.41px;
+	top: 451.41px;
 	background: url(../img/common/city.jpg), center/cover no-repeat;
 	overflow: hidden;
 	width: 100%;

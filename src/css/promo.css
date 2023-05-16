@@ -11,7 +11,7 @@
 	/* transform: matrix(-1, 0, 0, 1, 0, 0); */
 }
 .menu_block_container {
-	padding: 0 27px;
+	padding: 0;
 	position: fixed;
 	top: 35px;
 	width: 100%;
@@ -24,6 +24,7 @@
 	background: rgba(0, 0, 0, 0);
 	border-radius: 19px;
 	padding: 6px 12px 6px 12px;
+	max-width: 1620px;
 	width: 85.5%;
 	display: flex;
 	align-items: center;
@@ -339,7 +340,7 @@
 @media (max-width: 1200px) {
 	.menu_block {
 		padding: 12px 12px 12px 12px;
-		width: 94.5%;
+		width: 94%;
 	}
 
 	.flyer_club_block {
@@ -376,6 +377,9 @@
 	}
 }
 @media (max-width: 768px) {
+	.menu_block {
+		width: 94.5%;
+	}
 	.promo_banner {
 		gap: 9px;
 	}
@@ -448,6 +452,9 @@
 	}
 }
 @media (max-width: 576px) {
+	.menu_block {
+		width: 96%;
+	}
 	.promo_banner {
 		gap: 9px;
 	}
@@ -548,6 +555,9 @@
 	}
 }
 @media (max-width: 376px) {
+	.menu_block {
+		width: 99%;
+	}
 	.flyer_club_content {
 		padding: 12px 6px 12px 12px;
 		gap: 1.9px;
