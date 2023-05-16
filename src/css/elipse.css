@@ -43,6 +43,7 @@
 	font-weight: 700;
 	font-size: 14px;
 	color: #242424;
+    margin-top: 5px;
 }
 .free_call_back {
 
@@ -55,6 +56,7 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
+    margin-top: 5px;
 }
 .elipse:after,.elipse:before {
     position: absolute;
